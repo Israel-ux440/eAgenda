@@ -49,7 +49,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(573, 28);
+            menuStrip1.Size = new Size(762, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -64,8 +64,9 @@
             // contatosMenuItem
             // 
             contatosMenuItem.Name = "contatosMenuItem";
-            contatosMenuItem.Size = new Size(176, 24);
+            contatosMenuItem.Size = new Size(180, 24);
             contatosMenuItem.Text = "Contatos";
+            contatosMenuItem.Click += contatosMenuItem_Click;
             // 
             // compromissosMenuItem
             // 
@@ -79,7 +80,7 @@
             statusLabelPrincipal.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
             statusLabelPrincipal.Location = new Point(0, 309);
             statusLabelPrincipal.Name = "statusLabelPrincipal";
-            statusLabelPrincipal.Size = new Size(573, 25);
+            statusLabelPrincipal.Size = new Size(762, 25);
             statusLabelPrincipal.TabIndex = 1;
             statusLabelPrincipal.Text = "statusStrip1";
             // 
@@ -94,7 +95,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnAdicionar, btnEditar, btnExcluir });
             toolStrip1.Location = new Point(0, 28);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(573, 41);
+            toolStrip1.Size = new Size(762, 41);
             toolStrip1.TabIndex = 2;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -136,14 +137,14 @@
             pnlRegistros.Dock = DockStyle.Fill;
             pnlRegistros.Location = new Point(0, 69);
             pnlRegistros.Name = "pnlRegistros";
-            pnlRegistros.Size = new Size(573, 240);
+            pnlRegistros.Size = new Size(762, 240);
             pnlRegistros.TabIndex = 3;
             // 
             // TelaPrincipalForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(573, 334);
+            ClientSize = new Size(762, 334);
             Controls.Add(pnlRegistros);
             Controls.Add(toolStrip1);
             Controls.Add(statusLabelPrincipal);
