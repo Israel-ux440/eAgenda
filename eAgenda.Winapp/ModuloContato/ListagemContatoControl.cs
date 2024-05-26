@@ -15,6 +15,18 @@ namespace eAgenda.Winapp.ModuloContato
         public ListagemContatoControl()
         {
             InitializeComponent();
+
+
+            listContatos.Items.Add(
+                new Contato(
+                "Israel", 
+                "49 99978-9076", 
+                "israelfantoni04@gmail.com", 
+                "Academia do Programador", 
+                "Aluno")
+                );
+
+
         }
     }
 }

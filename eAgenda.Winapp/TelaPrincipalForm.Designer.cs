@@ -64,7 +64,7 @@
             // contatosMenuItem
             // 
             contatosMenuItem.Name = "contatosMenuItem";
-            contatosMenuItem.Size = new Size(180, 24);
+            contatosMenuItem.Size = new Size(176, 24);
             contatosMenuItem.Text = "Contatos";
             contatosMenuItem.Click += contatosMenuItem_Click;
             // 
@@ -109,6 +109,7 @@
             btnAdicionar.Padding = new Padding(5);
             btnAdicionar.Size = new Size(38, 38);
             btnAdicionar.Text = "toolStripButton1";
+            btnAdicionar.Click += btnAdicionar_Click;
             // 
             // btnEditar
             // 

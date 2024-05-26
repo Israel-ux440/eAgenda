@@ -38,7 +38,7 @@
             listContatos.ItemHeight = 15;
             listContatos.Location = new Point(3, 3);
             listContatos.Name = "listContatos";
-            listContatos.Size = new Size(119, 34);
+            listContatos.Size = new Size(514, 34);
             listContatos.TabIndex = 0;
             // 
             // ListagemContatoControl

@@ -18,8 +18,21 @@ namespace eAgenda.Winapp
             ListagemContatoControl listagemContato = new ListagemContatoControl();
             listagemContato.Dock = DockStyle.Fill;
 
-            pnlRegistros.Controls.Clear(); 
+            pnlRegistros.Controls.Clear();
             pnlRegistros.Controls.Add(listagemContato);
+        }
+
+        private void btnAdicionar_Click(object sender, EventArgs e)
+        {
+            TelaContatoForm telaContato = new TelaContatoForm();
+
+            telaContato.ShowDialog();
+
+
+
+            
+
+
         }
     }
 }
