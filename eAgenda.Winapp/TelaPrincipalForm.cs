@@ -10,11 +10,15 @@ namespace eAgenda.Winapp
         public TelaPrincipalForm()
         {
             InitializeComponent();
+            lblTipoCadastro.Text = string.Empty;
+
         }
 
         private void contatosMenuItem_Click(object sender, EventArgs e)
         {
             controlador = new ControladorContato();
+
+            lblTipoCadastro.Text = "Cadastro de " + controlador.TipoCadastro;
 
             ConfigurarToolTips(controlador);
             ConfigurarListagem(controlador);
@@ -48,8 +52,8 @@ namespace eAgenda.Winapp
             UserControl listagemContato = controlador.ObterListagem();
             listagemContato.Dock = DockStyle.Fill;
 
-            pnlRegistros.Controls.Clear();
-            pnlRegistros.Controls.Add(listagemContato);
+            lblTipoCadastro.Controls.Clear();
+            lblTipoCadastro.Controls.Add(listagemContato);
         }
     }
 }

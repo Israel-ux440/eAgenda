@@ -38,7 +38,9 @@
             btnAdicionar = new ToolStripButton();
             btnEditar = new ToolStripButton();
             btnExcluir = new ToolStripButton();
-            pnlRegistros = new Panel();
+            toolStripSeparator1 = new ToolStripSeparator();
+            toolStripLabel1 = new ToolStripLabel();
+            lblTipoCadastro = new Panel();
             menuStrip1.SuspendLayout();
             statusLabelPrincipal.SuspendLayout();
             toolStrip1.SuspendLayout();
@@ -64,14 +66,14 @@
             // contatosMenuItem
             // 
             contatosMenuItem.Name = "contatosMenuItem";
-            contatosMenuItem.Size = new Size(180, 24);
+            contatosMenuItem.Size = new Size(176, 24);
             contatosMenuItem.Text = "Contatos";
             contatosMenuItem.Click += contatosMenuItem_Click;
             // 
             // compromissosMenuItem
             // 
             compromissosMenuItem.Name = "compromissosMenuItem";
-            compromissosMenuItem.Size = new Size(180, 24);
+            compromissosMenuItem.Size = new Size(176, 24);
             compromissosMenuItem.Text = "Compromissos";
             compromissosMenuItem.Click += compromissosMenuItem_Click;
             // 
@@ -93,7 +95,7 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { btnAdicionar, btnEditar, btnExcluir });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { btnAdicionar, btnEditar, btnExcluir, toolStripSeparator1, toolStripLabel1 });
             toolStrip1.Location = new Point(0, 28);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(762, 41);
@@ -134,20 +136,32 @@
             btnExcluir.Size = new Size(38, 38);
             btnExcluir.Text = "toolStripButton3";
             // 
-            // pnlRegistros
+            // toolStripSeparator1
             // 
-            pnlRegistros.Dock = DockStyle.Fill;
-            pnlRegistros.Location = new Point(0, 69);
-            pnlRegistros.Name = "pnlRegistros";
-            pnlRegistros.Size = new Size(762, 240);
-            pnlRegistros.TabIndex = 3;
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(6, 41);
+            // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(98, 38);
+            toolStripLabel1.Text = "TipoCadastro";
+            // 
+            // lblTipoCadastro
+            // 
+            lblTipoCadastro.Dock = DockStyle.Fill;
+            lblTipoCadastro.Location = new Point(0, 69);
+            lblTipoCadastro.Name = "lblTipoCadastro";
+            lblTipoCadastro.Size = new Size(762, 240);
+            lblTipoCadastro.TabIndex = 3;
             // 
             // TelaPrincipalForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(762, 334);
-            Controls.Add(pnlRegistros);
+            Controls.Add(lblTipoCadastro);
             Controls.Add(toolStrip1);
             Controls.Add(statusLabelPrincipal);
             Controls.Add(menuStrip1);
@@ -180,6 +194,8 @@
         private ToolStripButton btnAdicionar;
         private ToolStripButton btnEditar;
         private ToolStripButton btnExcluir;
-        private Panel pnlRegistros;
+        private Panel lblTipoCadastro;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripLabel toolStripLabel1;
     }
 }
