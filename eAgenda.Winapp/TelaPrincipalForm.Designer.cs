@@ -64,15 +64,16 @@
             // contatosMenuItem
             // 
             contatosMenuItem.Name = "contatosMenuItem";
-            contatosMenuItem.Size = new Size(176, 24);
+            contatosMenuItem.Size = new Size(180, 24);
             contatosMenuItem.Text = "Contatos";
             contatosMenuItem.Click += contatosMenuItem_Click;
             // 
             // compromissosMenuItem
             // 
             compromissosMenuItem.Name = "compromissosMenuItem";
-            compromissosMenuItem.Size = new Size(176, 24);
+            compromissosMenuItem.Size = new Size(180, 24);
             compromissosMenuItem.Text = "Compromissos";
+            compromissosMenuItem.Click += compromissosMenuItem_Click;
             // 
             // statusLabelPrincipal
             // 
