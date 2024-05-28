@@ -107,7 +107,7 @@
             txtTelefone.Name = "txtTelefone";
             txtTelefone.Size = new Size(393, 27);
             txtTelefone.TabIndex = 7;
-            txtTelefone.TextChanged += textBox4_TextChanged;
+           
             // 
             // label4
             // 
@@ -157,6 +157,7 @@
             // 
             // btnCancelar
             // 
+            btnCancelar.DialogResult = DialogResult.Cancel;
             btnCancelar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCancelar.Location = new Point(395, 281);
             btnCancelar.Name = "btnCancelar";
@@ -167,6 +168,7 @@
             // 
             // btnGravar
             // 
+            btnGravar.DialogResult = DialogResult.OK;
             btnGravar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnGravar.Location = new Point(260, 281);
             btnGravar.Name = "btnGravar";
@@ -174,6 +176,7 @@
             btnGravar.TabIndex = 14;
             btnGravar.Text = "Gravar";
             btnGravar.UseVisualStyleBackColor = true;
+            btnGravar.Click += btnGravar_Click;
             // 
             // TelaContatoForm
             // 
@@ -200,7 +203,7 @@
             Name = "TelaContatoForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Cadastro de Contato";
-            Load += TelaContatoForm_Load;
+            
             ResumeLayout(false);
             PerformLayout();
         }

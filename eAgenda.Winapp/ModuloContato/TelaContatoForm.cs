@@ -17,12 +17,7 @@ namespace eAgenda.Winapp.ModuloContato
             InitializeComponent();
         }
 
-        private void TelaContatoForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
+        private void btnGravar_Click(object sender, EventArgs e)
         {
 
         }

@@ -36,9 +36,6 @@ namespace eAgenda.Winapp
         {
             controlador.Adicionar();
 
-            TelaContatoForm telaContato = new TelaContatoForm();
-
-            telaContato.ShowDialog();
         }
         private void ConfigurarToolTips(ControladorBase controladorSelecionado)
         {
