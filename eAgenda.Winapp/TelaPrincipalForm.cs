@@ -7,23 +7,25 @@ namespace eAgenda.Winapp
     {
 
         ControladorBase controlador;
+
+        RepositorioContato repositorioContato;
         public TelaPrincipalForm()
         {
             InitializeComponent();
             lblTipoCadastro.Text = string.Empty;
 
+            repositorioContato = new RepositorioContato();
         }
 
         private void contatosMenuItem_Click(object sender, EventArgs e)
         {
-            controlador = new ControladorContato();
+            controlador = new ControladorContato(repositorioContato);
 
             lblTipoCadastro.Text = "Cadastro de " + controlador.TipoCadastro;
 
             ConfigurarToolTips(controlador);
             ConfigurarListagem(controlador);
         }
-
 
         private void compromissosMenuItem_Click(object sender, EventArgs e)
         {
