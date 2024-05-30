@@ -67,10 +67,10 @@
             // txtNome
             // 
             txtNome.Font = new Font("Segoe UI", 11.25F);
-            txtNome.Location = new Point(77, 58);
+            txtNome.Location = new Point(77, 61);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(393, 27);
-            txtNome.TabIndex = 3;
+            txtNome.Size = new Size(459, 27);
+            txtNome.TabIndex = 0;
             // 
             // label2
             // 
@@ -87,8 +87,8 @@
             txtEmail.Font = new Font("Segoe UI", 11.25F);
             txtEmail.Location = new Point(77, 88);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(393, 27);
-            txtEmail.TabIndex = 5;
+            txtEmail.Size = new Size(459, 27);
+            txtEmail.TabIndex = 1;
             // 
             // label3
             // 
@@ -105,9 +105,8 @@
             txtTelefone.Font = new Font("Segoe UI", 11.25F);
             txtTelefone.Location = new Point(77, 121);
             txtTelefone.Name = "txtTelefone";
-            txtTelefone.Size = new Size(393, 27);
-            txtTelefone.TabIndex = 7;
-           
+            txtTelefone.Size = new Size(459, 27);
+            txtTelefone.TabIndex = 2;
             // 
             // label4
             // 
@@ -125,7 +124,7 @@
             txtCargo.Location = new Point(77, 154);
             txtCargo.Name = "txtCargo";
             txtCargo.Size = new Size(173, 27);
-            txtCargo.TabIndex = 9;
+            txtCargo.TabIndex = 3;
             // 
             // label5
             // 
@@ -142,8 +141,8 @@
             txtEmpresa.Font = new Font("Segoe UI", 11.25F);
             txtEmpresa.Location = new Point(331, 154);
             txtEmpresa.Name = "txtEmpresa";
-            txtEmpresa.Size = new Size(139, 27);
-            txtEmpresa.TabIndex = 13;
+            txtEmpresa.Size = new Size(205, 27);
+            txtEmpresa.TabIndex = 4;
             // 
             // label7
             // 
@@ -159,10 +158,10 @@
             // 
             btnCancelar.DialogResult = DialogResult.Cancel;
             btnCancelar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCancelar.Location = new Point(395, 281);
+            btnCancelar.Location = new Point(407, 206);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(129, 48);
-            btnCancelar.TabIndex = 14;
+            btnCancelar.TabIndex = 5;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -170,10 +169,10 @@
             // 
             btnGravar.DialogResult = DialogResult.OK;
             btnGravar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnGravar.Location = new Point(260, 281);
+            btnGravar.Location = new Point(272, 206);
             btnGravar.Name = "btnGravar";
             btnGravar.Size = new Size(129, 48);
-            btnGravar.TabIndex = 14;
+            btnGravar.TabIndex = 6;
             btnGravar.Text = "Gravar";
             btnGravar.UseVisualStyleBackColor = true;
             btnGravar.Click += btnGravar_Click;
@@ -182,7 +181,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(555, 355);
+            ClientSize = new Size(575, 292);
             Controls.Add(btnGravar);
             Controls.Add(btnCancelar);
             Controls.Add(txtEmpresa);
@@ -203,7 +202,6 @@
             Name = "TelaContatoForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Cadastro de Contato";
-            
             ResumeLayout(false);
             PerformLayout();
         }
