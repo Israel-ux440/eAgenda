@@ -16,7 +16,12 @@ namespace eAgenda.Winapp.ModuloContato
         {
             TelaContatoForm telaContato = new TelaContatoForm();
 
-            telaContato.ShowDialog();
+           DialogResult resultado =  telaContato.ShowDialog(); 
+
+            if (resultado == DialogResult.OK)
+            {
+                MessageBox.Show("Informações Gravadas!");
+            }
         }
 
         public override UserControl ObterListagem()
