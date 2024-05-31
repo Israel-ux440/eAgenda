@@ -1,4 +1,4 @@
-﻿ using eAgenda.Winapp.Compartilhado;
+﻿using eAgenda.Winapp.Compartilhado;
 
 namespace eAgenda.Winapp.ModuloContato
 {
@@ -23,16 +23,16 @@ namespace eAgenda.Winapp.ModuloContato
         {
             TelaContatoForm telaContato = new TelaContatoForm();
 
-           DialogResult resultado =  telaContato.ShowDialog();
+            DialogResult resultado = telaContato.ShowDialog();
 
             if (resultado != DialogResult.OK)
-                return; 
-               
-                Contato novoContato = telaContato.Contato;
+                return;
 
-                repositorioContato.Cadastrar(novoContato);
+            Contato novoContato = telaContato.Contato;
 
-                CarregarContatos();
+            repositorioContato.Cadastrar(novoContato);
+
+            CarregarContatos();
 
             TelaPrincipalForm
                .Instancia
@@ -44,7 +44,15 @@ namespace eAgenda.Winapp.ModuloContato
             TelaContatoForm telaContato = new TelaContatoForm();
 
             Contato contatoSelecionado = ListagemContato.ObterRegistroSelecionado();
-
+            if (contatoSelecionado == null)
+            {
+                MessageBox.Show(
+                "Não é possível realizar esta ação sem um registro selecionado.",
+                "Aviso",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Warning
+                         ); return;
+            }
             telaContato.Contato = contatoSelecionado;
 
             DialogResult resultado = telaContato.ShowDialog();
@@ -66,15 +74,26 @@ namespace eAgenda.Winapp.ModuloContato
 
         public override void Excluir()
         {
+            TelaContatoForm telaContato = new TelaContatoForm();
+
             Contato contatoSelecionado = ListagemContato.ObterRegistroSelecionado();
+            if (contatoSelecionado == null)
+
+            {
+                MessageBox.Show(
+                 "Não é possível realizar esta ação sem um registro selecionado.",
+                 "Aviso",
+                 MessageBoxButtons.OK,
+                 MessageBoxIcon.Warning
+                         ); return;
+            }
 
             DialogResult resposta = MessageBox.Show(
-                $"Você deseja realmente excluir o registro \"{contatoSelecionado.Nome}\"?",
-                "Confirmar Exclusão",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning
-            );
-
+             $"Você deseja realmente excluir o registro \"{contatoSelecionado.Nome}\"?",
+             "Confirmar Exclusão",
+             MessageBoxButtons.YesNo,
+             MessageBoxIcon.Warning
+         );
 
             if (resposta != DialogResult.Yes)
                 return;
@@ -84,8 +103,9 @@ namespace eAgenda.Winapp.ModuloContato
             CarregarContatos();
 
             TelaPrincipalForm
-               .Instancia
-               .AtualizarRodape($"O registro \"{contatoSelecionado.Nome}\" foi excluído com sucesso!");
+                .Instancia
+                .AtualizarRodape($"O registro \"{contatoSelecionado.Nome}\" foi excluído com sucesso!");
+
 
         }
 
@@ -105,7 +125,7 @@ namespace eAgenda.Winapp.ModuloContato
             return ListagemContato;
         }
 
-        
+
     }
 }
 
