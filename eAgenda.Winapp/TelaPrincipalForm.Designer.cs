@@ -66,14 +66,14 @@
             // contatosMenuItem
             // 
             contatosMenuItem.Name = "contatosMenuItem";
-            contatosMenuItem.Size = new Size(180, 24);
+            contatosMenuItem.Size = new Size(176, 24);
             contatosMenuItem.Text = "Contatos";
             contatosMenuItem.Click += contatosMenuItem_Click;
             // 
             // compromissosMenuItem
             // 
             compromissosMenuItem.Name = "compromissosMenuItem";
-            compromissosMenuItem.Size = new Size(180, 24);
+            compromissosMenuItem.Size = new Size(176, 24);
             compromissosMenuItem.Text = "Compromissos";
             compromissosMenuItem.Click += compromissosMenuItem_Click;
             // 
@@ -136,6 +136,7 @@
             btnExcluir.Padding = new Padding(5);
             btnExcluir.Size = new Size(38, 38);
             btnExcluir.Text = "toolStripButton3";
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // toolStripSeparator1
             // 
@@ -148,7 +149,7 @@
             toolStripLabel1.Name = "toolStripLabel1";
             toolStripLabel1.Size = new Size(98, 38);
             toolStripLabel1.Text = "TipoCadastro";
-            toolStripLabel1.Click += toolStripLabel1_Click;
+            
             // 
             // lblTipoCadastro
             // 

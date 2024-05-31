@@ -33,6 +33,10 @@ namespace eAgenda.Winapp.ModuloContato
                 repositorioContato.Cadastrar(novoContato);
 
                 CarregarContatos();
+
+            TelaPrincipalForm
+               .Instancia
+               .AtualizarRodape($"O registro \"{novoContato.Nome}\" foi criado com sucesso!");
         }
 
         public override void Editar()
@@ -44,8 +48,46 @@ namespace eAgenda.Winapp.ModuloContato
             telaContato.Contato = contatoSelecionado;
 
             DialogResult resultado = telaContato.ShowDialog();
+
+            if (resultado != DialogResult.OK)
+                return;
+
+            Contato contatoEditado = telaContato.Contato;
+
+            repositorioContato.Editar(contatoSelecionado.Id, contatoEditado);
+
+            CarregarContatos();
+
+            TelaPrincipalForm
+                .Instancia
+                .AtualizarRodape($"O registro \"{contatoEditado.Nome}\" foi editado com sucesso!");
+
         }
 
+        public override void Excluir()
+        {
+            Contato contatoSelecionado = ListagemContato.ObterRegistroSelecionado();
+
+            DialogResult resposta = MessageBox.Show(
+                $"Você deseja realmente excluir o registro \"{contatoSelecionado.Nome}\"?",
+                "Confirmar Exclusão",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+
+            if (resposta != DialogResult.Yes)
+                return;
+
+            repositorioContato.Excluir(contatoSelecionado.Id);
+
+            CarregarContatos();
+
+            TelaPrincipalForm
+               .Instancia
+               .AtualizarRodape($"O registro \"{contatoSelecionado.Nome}\" foi excluído com sucesso!");
+
+        }
 
         private void CarregarContatos()
         {
