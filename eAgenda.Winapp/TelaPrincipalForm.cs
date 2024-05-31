@@ -39,6 +39,11 @@ namespace eAgenda.Winapp
             controlador.Adicionar();
 
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            controlador.Editar();
+        }
         private void ConfigurarToolTips(ControladorBase controladorSelecionado)
         {
             btnAdicionar.ToolTipText = controladorSelecionado.ToolTipAdicionar;
@@ -53,6 +58,11 @@ namespace eAgenda.Winapp
 
             lblTipoCadastro.Controls.Clear();
             lblTipoCadastro.Controls.Add(listagemContato);
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

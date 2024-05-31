@@ -1,4 +1,4 @@
-﻿using eAgenda.Winapp.Compartilhado;
+﻿ using eAgenda.Winapp.Compartilhado;
 
 namespace eAgenda.Winapp.ModuloContato
 {
@@ -23,18 +23,27 @@ namespace eAgenda.Winapp.ModuloContato
         {
             TelaContatoForm telaContato = new TelaContatoForm();
 
-           DialogResult resultado =  telaContato.ShowDialog(); 
+           DialogResult resultado =  telaContato.ShowDialog();
 
-            if (resultado == DialogResult.OK)
-            {
+            if (resultado != DialogResult.OK)
+                return; 
+               
                 Contato novoContato = telaContato.Contato;
 
                 repositorioContato.Cadastrar(novoContato);
 
-                MessageBox.Show("Informações Gravadas!");
-
                 CarregarContatos();
-            }
+        }
+
+        public override void Editar()
+        {
+            TelaContatoForm telaContato = new TelaContatoForm();
+
+            Contato contatoSelecionado = ListagemContato.ObterRegistroSelecionado();
+
+            telaContato.Contato = contatoSelecionado;
+
+            DialogResult resultado = telaContato.ShowDialog();
         }
 
 
@@ -53,6 +62,8 @@ namespace eAgenda.Winapp.ModuloContato
 
             return ListagemContato;
         }
+
+        
     }
 }
 

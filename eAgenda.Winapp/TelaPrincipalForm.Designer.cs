@@ -51,7 +51,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { cadastrosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(762, 28);
+            menuStrip1.Size = new Size(833, 28);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -66,14 +66,14 @@
             // contatosMenuItem
             // 
             contatosMenuItem.Name = "contatosMenuItem";
-            contatosMenuItem.Size = new Size(176, 24);
+            contatosMenuItem.Size = new Size(180, 24);
             contatosMenuItem.Text = "Contatos";
             contatosMenuItem.Click += contatosMenuItem_Click;
             // 
             // compromissosMenuItem
             // 
             compromissosMenuItem.Name = "compromissosMenuItem";
-            compromissosMenuItem.Size = new Size(176, 24);
+            compromissosMenuItem.Size = new Size(180, 24);
             compromissosMenuItem.Text = "Compromissos";
             compromissosMenuItem.Click += compromissosMenuItem_Click;
             // 
@@ -83,7 +83,7 @@
             statusLabelPrincipal.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
             statusLabelPrincipal.Location = new Point(0, 309);
             statusLabelPrincipal.Name = "statusLabelPrincipal";
-            statusLabelPrincipal.Size = new Size(762, 25);
+            statusLabelPrincipal.Size = new Size(833, 25);
             statusLabelPrincipal.TabIndex = 1;
             statusLabelPrincipal.Text = "statusStrip1";
             // 
@@ -98,7 +98,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { btnAdicionar, btnEditar, btnExcluir, toolStripSeparator1, toolStripLabel1 });
             toolStrip1.Location = new Point(0, 28);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(762, 41);
+            toolStrip1.Size = new Size(833, 41);
             toolStrip1.TabIndex = 2;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -124,6 +124,7 @@
             btnEditar.Padding = new Padding(5);
             btnEditar.Size = new Size(38, 38);
             btnEditar.Text = "toolStripButton2";
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnExcluir
             // 
@@ -147,20 +148,21 @@
             toolStripLabel1.Name = "toolStripLabel1";
             toolStripLabel1.Size = new Size(98, 38);
             toolStripLabel1.Text = "TipoCadastro";
+            toolStripLabel1.Click += toolStripLabel1_Click;
             // 
             // lblTipoCadastro
             // 
             lblTipoCadastro.Dock = DockStyle.Fill;
             lblTipoCadastro.Location = new Point(0, 69);
             lblTipoCadastro.Name = "lblTipoCadastro";
-            lblTipoCadastro.Size = new Size(762, 240);
+            lblTipoCadastro.Size = new Size(833, 240);
             lblTipoCadastro.TabIndex = 3;
             // 
             // TelaPrincipalForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(762, 334);
+            ClientSize = new Size(833, 334);
             Controls.Add(lblTipoCadastro);
             Controls.Add(toolStrip1);
             Controls.Add(statusLabelPrincipal);

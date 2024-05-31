@@ -15,6 +15,8 @@ namespace eAgenda.Winapp.Compartilhado
         public abstract UserControl ObterListagem();
 
         public abstract void Adicionar();
+
+        public abstract void Editar();
         
     }
 }
