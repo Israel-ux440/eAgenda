@@ -40,7 +40,7 @@
             btnExcluir = new ToolStripButton();
             toolStripSeparator1 = new ToolStripSeparator();
             toolStripLabel1 = new ToolStripLabel();
-            lblTipoCadastro = new Panel();
+            pnlRegistros = new Panel();
             menuStrip1.SuspendLayout();
             statusLabelPrincipal.SuspendLayout();
             toolStrip1.SuspendLayout();
@@ -145,23 +145,23 @@
             // 
             toolStripLabel1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(98, 38);
-            toolStripLabel1.Text = "TipoCadastro";
+            toolStripLabel1.Size = new Size(152, 38);
+            toolStripLabel1.Text = "Cadastro de Contatos";
             // 
-            // lblTipoCadastro
+            // pnlRegistros
             // 
-            lblTipoCadastro.Dock = DockStyle.Fill;
-            lblTipoCadastro.Location = new Point(0, 69);
-            lblTipoCadastro.Name = "lblTipoCadastro";
-            lblTipoCadastro.Size = new Size(762, 240);
-            lblTipoCadastro.TabIndex = 3;
+            pnlRegistros.Dock = DockStyle.Fill;
+            pnlRegistros.Location = new Point(0, 69);
+            pnlRegistros.Name = "pnlRegistros";
+            pnlRegistros.Size = new Size(762, 240);
+            pnlRegistros.TabIndex = 3;
             // 
             // TelaPrincipalForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(762, 334);
-            Controls.Add(lblTipoCadastro);
+            Controls.Add(pnlRegistros);
             Controls.Add(toolStrip1);
             Controls.Add(statusLabelPrincipal);
             Controls.Add(menuStrip1);
@@ -194,7 +194,7 @@
         private ToolStripButton btnAdicionar;
         private ToolStripButton btnEditar;
         private ToolStripButton btnExcluir;
-        private Panel lblTipoCadastro;
+        private Panel pnlRegistros;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripLabel toolStripLabel1;
     }

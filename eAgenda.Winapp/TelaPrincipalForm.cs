@@ -10,7 +10,7 @@ namespace eAgenda.Winapp
         public TelaPrincipalForm()
         {
             InitializeComponent();
-            lblTipoCadastro.Text = string.Empty;
+            pnlRegistros.Text = string.Empty;
 
         }
 
@@ -18,7 +18,7 @@ namespace eAgenda.Winapp
         {
             controlador = new ControladorContato();
 
-            lblTipoCadastro.Text = "Cadastro de " + controlador.TipoCadastro;
+            pnlRegistros.Text = "Cadastro de " + controlador.TipoCadastro;
 
             ConfigurarToolTips(controlador);
             ConfigurarListagem(controlador);
@@ -49,8 +49,8 @@ namespace eAgenda.Winapp
             UserControl listagemContato = controlador.ObterListagem();
             listagemContato.Dock = DockStyle.Fill;
 
-            lblTipoCadastro.Controls.Clear();
-            lblTipoCadastro.Controls.Add(listagemContato);
+            pnlRegistros.Controls.Clear();
+            pnlRegistros.Controls.Add(listagemContato);
         }
     }
 }
