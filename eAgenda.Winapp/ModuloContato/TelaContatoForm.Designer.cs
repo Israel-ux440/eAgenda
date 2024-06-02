@@ -70,7 +70,7 @@
             txtNome.Location = new Point(77, 58);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(393, 27);
-            txtNome.TabIndex = 3;
+            txtNome.TabIndex = 2;
             // 
             // label2
             // 
@@ -88,7 +88,7 @@
             txtEmail.Location = new Point(77, 88);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(393, 27);
-            txtEmail.TabIndex = 5;
+            txtEmail.TabIndex = 3;
             // 
             // label3
             // 
@@ -106,8 +106,7 @@
             txtTelefone.Location = new Point(77, 121);
             txtTelefone.Name = "txtTelefone";
             txtTelefone.Size = new Size(393, 27);
-            txtTelefone.TabIndex = 7;
-           
+            txtTelefone.TabIndex = 4;
             // 
             // label4
             // 
@@ -125,7 +124,7 @@
             txtCargo.Location = new Point(77, 154);
             txtCargo.Name = "txtCargo";
             txtCargo.Size = new Size(173, 27);
-            txtCargo.TabIndex = 9;
+            txtCargo.TabIndex = 5;
             // 
             // label5
             // 
@@ -143,7 +142,7 @@
             txtEmpresa.Location = new Point(331, 154);
             txtEmpresa.Name = "txtEmpresa";
             txtEmpresa.Size = new Size(139, 27);
-            txtEmpresa.TabIndex = 13;
+            txtEmpresa.TabIndex = 6;
             // 
             // label7
             // 
@@ -162,7 +161,7 @@
             btnCancelar.Location = new Point(395, 281);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(129, 48);
-            btnCancelar.TabIndex = 14;
+            btnCancelar.TabIndex = 7;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
@@ -173,7 +172,7 @@
             btnGravar.Location = new Point(260, 281);
             btnGravar.Name = "btnGravar";
             btnGravar.Size = new Size(129, 48);
-            btnGravar.TabIndex = 14;
+            btnGravar.TabIndex = 8;
             btnGravar.Text = "Gravar";
             btnGravar.UseVisualStyleBackColor = true;
             btnGravar.Click += btnGravar_Click;
@@ -203,7 +202,7 @@
             Name = "TelaContatoForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Cadastro de Contato";
-            
+            Load += TelaContatoForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

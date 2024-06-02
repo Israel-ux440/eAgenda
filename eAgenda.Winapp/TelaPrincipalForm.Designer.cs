@@ -39,7 +39,7 @@
             btnEditar = new ToolStripButton();
             btnExcluir = new ToolStripButton();
             toolStripSeparator1 = new ToolStripSeparator();
-            toolStripLabel1 = new ToolStripLabel();
+            lblTipoCadastro = new ToolStripLabel();
             pnlRegistros = new Panel();
             menuStrip1.SuspendLayout();
             statusLabelPrincipal.SuspendLayout();
@@ -95,7 +95,7 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { btnAdicionar, btnEditar, btnExcluir, toolStripSeparator1, toolStripLabel1 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { btnAdicionar, btnEditar, btnExcluir, toolStripSeparator1, lblTipoCadastro });
             toolStrip1.Location = new Point(0, 28);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(762, 41);
@@ -124,6 +124,7 @@
             btnEditar.Padding = new Padding(5);
             btnEditar.Size = new Size(38, 38);
             btnEditar.Text = "toolStripButton2";
+            btnEditar.Click += btnEditar_Click_1;
             // 
             // btnExcluir
             // 
@@ -135,18 +136,19 @@
             btnExcluir.Padding = new Padding(5);
             btnExcluir.Size = new Size(38, 38);
             btnExcluir.Text = "toolStripButton3";
+            btnExcluir.Click += btnExcluir_Click_1;
             // 
             // toolStripSeparator1
             // 
             toolStripSeparator1.Name = "toolStripSeparator1";
             toolStripSeparator1.Size = new Size(6, 41);
             // 
-            // toolStripLabel1
+            // lblTipoCadastro
             // 
-            toolStripLabel1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            toolStripLabel1.Name = "toolStripLabel1";
-            toolStripLabel1.Size = new Size(152, 38);
-            toolStripLabel1.Text = "Cadastro de Contatos";
+            lblTipoCadastro.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTipoCadastro.Name = "lblTipoCadastro";
+            lblTipoCadastro.Size = new Size(152, 38);
+            lblTipoCadastro.Text = "Cadastro de Contatos";
             // 
             // pnlRegistros
             // 
@@ -196,6 +198,6 @@
         private ToolStripButton btnExcluir;
         private Panel pnlRegistros;
         private ToolStripSeparator toolStripSeparator1;
-        private ToolStripLabel toolStripLabel1;
+        private ToolStripLabel lblTipoCadastro;
     }
 }

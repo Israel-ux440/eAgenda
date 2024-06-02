@@ -1,14 +1,8 @@
 ﻿using eAgenda.ConsoleApp.Compartilhado;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace eAgenda.Winapp.ModuloContato
 {
     public class Contato : EntidadeBase
-
     {
         public string Nome { get; set; }
         public string Telefone { get; set; }
@@ -32,11 +26,11 @@ namespace eAgenda.Winapp.ModuloContato
             if (string.IsNullOrEmpty(Nome.Trim()))
                 erros.Add("O campo \"nome\" é obrigatório");
 
-            if (string.IsNullOrEmpty(Telefone.Trim()))
-                erros.Add("O campo \"telefone\" é obrigatório");
-
             if (string.IsNullOrEmpty(Email.Trim()))
                 erros.Add("O campo \"email\" é obrigatório");
+
+            if (string.IsNullOrEmpty(Telefone.Trim()))
+                erros.Add("O campo \"telefone\" é obrigatório");
 
             if (string.IsNullOrEmpty(Cargo.Trim()))
                 erros.Add("O campo \"cargo\" é obrigatório");
