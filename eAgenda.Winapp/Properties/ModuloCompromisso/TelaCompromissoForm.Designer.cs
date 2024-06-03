@@ -41,10 +41,10 @@
             checkMarcarContato = new CheckBox();
             cmbContatos = new ComboBox();
             groupBox1 = new GroupBox();
-            rdbRemoto = new RadioButton();
-            rdbPresencial = new RadioButton();
-            txtLink = new TextBox();
             txtLocal = new TextBox();
+            txtLink = new TextBox();
+            rdbPresencial = new RadioButton();
+            rdbRemoto = new RadioButton();
             btnGravar = new Button();
             btnCancelar = new Button();
             groupBox1.SuspendLayout();
@@ -69,7 +69,6 @@
             label2.Size = new Size(64, 20);
             label2.TabIndex = 2;
             label2.Text = "Assunto:";
-            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -158,10 +157,12 @@
             checkMarcarContato.TabIndex = 5;
             checkMarcarContato.Text = "Deseja marcar um contato ?";
             checkMarcarContato.UseVisualStyleBackColor = true;
+            checkMarcarContato.CheckedChanged += checkMarcarContato_CheckedChanged;
             // 
             // cmbContatos
             // 
             cmbContatos.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbContatos.Enabled = false;
             cmbContatos.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbContatos.FormattingEnabled = true;
             cmbContatos.Items.AddRange(new object[] { "rech ", "tiago" });
@@ -184,17 +185,20 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Localização";
             // 
-            // rdbRemoto
+            // txtLocal
             // 
-            rdbRemoto.AutoSize = true;
-            rdbRemoto.Checked = true;
-            rdbRemoto.Location = new Point(6, 26);
-            rdbRemoto.Name = "rdbRemoto";
-            rdbRemoto.Size = new Size(83, 24);
-            rdbRemoto.TabIndex = 8;
-            rdbRemoto.TabStop = true;
-            rdbRemoto.Text = "Remoto:";
-            rdbRemoto.UseVisualStyleBackColor = true;
+            txtLocal.Enabled = false;
+            txtLocal.Location = new Point(101, 53);
+            txtLocal.Name = "txtLocal";
+            txtLocal.Size = new Size(225, 27);
+            txtLocal.TabIndex = 10;
+            // 
+            // txtLink
+            // 
+            txtLink.Location = new Point(101, 23);
+            txtLink.Name = "txtLink";
+            txtLink.Size = new Size(225, 27);
+            txtLink.TabIndex = 9;
             // 
             // rdbPresencial
             // 
@@ -205,20 +209,20 @@
             rdbPresencial.TabIndex = 8;
             rdbPresencial.Text = "Presencial:";
             rdbPresencial.UseVisualStyleBackColor = true;
+            rdbPresencial.CheckedChanged += rdbPresencial_CheckedChanged;
             // 
-            // txtLink
+            // rdbRemoto
             // 
-            txtLink.Location = new Point(101, 23);
-            txtLink.Name = "txtLink";
-            txtLink.Size = new Size(225, 27);
-            txtLink.TabIndex = 9;
-            // 
-            // txtLocal
-            // 
-            txtLocal.Location = new Point(101, 53);
-            txtLocal.Name = "txtLocal";
-            txtLocal.Size = new Size(225, 27);
-            txtLocal.TabIndex = 10;
+            rdbRemoto.AutoSize = true;
+            rdbRemoto.Checked = true;
+            rdbRemoto.Location = new Point(1, 23);
+            rdbRemoto.Name = "rdbRemoto";
+            rdbRemoto.Size = new Size(83, 24);
+            rdbRemoto.TabIndex = 8;
+            rdbRemoto.TabStop = true;
+            rdbRemoto.Text = "Remoto:";
+            rdbRemoto.UseVisualStyleBackColor = true;
+            rdbRemoto.CheckedChanged += rdbRemoto_CheckedChanged;
             // 
             // btnGravar
             // 
