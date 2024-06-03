@@ -23,7 +23,7 @@ namespace eAgenda.Winapp
 
         public void AtualizarRodape(string texto)
         {
-            statusLabelPrincipal.Text = texto;
+            statusPrincipal1.Text = texto;
         }
 
         private void contatosMenuItem_Click(object sender, EventArgs e)
@@ -38,6 +38,7 @@ namespace eAgenda.Winapp
 
         private void compromissosMenuItem_Click(object sender, EventArgs e)
         {
+            
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -54,7 +55,7 @@ namespace eAgenda.Winapp
         {
             controlador.Excluir();
         }
-       
+
         private void ConfigurarToolTips(ControladorBase controladorSelecionado)
         {
             btnAdicionar.ToolTipText = controladorSelecionado.ToolTipAdicionar;
@@ -71,6 +72,9 @@ namespace eAgenda.Winapp
 
         }
 
+       
+
+        
     }
 }
         

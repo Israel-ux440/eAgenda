@@ -30,10 +30,10 @@
             string nome = txtNome.Text;
             string email = txtEmail.Text;
             string telefone = txtTelefone.Text;
-            string cargo = txtCargo.Text;
+            string cargo = txtCargo.Text;   
             string empresa = txtEmpresa.Text;
 
-            contato = new Contato(nome, telefone, email, empresa, cargo);
+            contato = new Contato(nome,telefone, email, empresa, cargo);
 
             List<string> erros = contato.Validar();
 
@@ -45,9 +45,6 @@
             }
         }
 
-        private void TelaContatoForm_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

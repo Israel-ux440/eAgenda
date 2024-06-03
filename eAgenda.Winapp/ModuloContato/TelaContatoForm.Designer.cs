@@ -202,7 +202,7 @@
             Name = "TelaContatoForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "Cadastro de Contato";
-            Load += TelaContatoForm_Load;
+           
             ResumeLayout(false);
             PerformLayout();
         }

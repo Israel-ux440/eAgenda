@@ -33,7 +33,7 @@
             contatosMenuItem = new ToolStripMenuItem();
             compromissosMenuItem = new ToolStripMenuItem();
             statusLabelPrincipal = new StatusStrip();
-            toolStripStatusLabel1 = new ToolStripStatusLabel();
+            statusPrincipal1 = new ToolStripStatusLabel();
             toolStrip1 = new ToolStrip();
             btnAdicionar = new ToolStripButton();
             btnEditar = new ToolStripButton();
@@ -80,18 +80,18 @@
             // statusLabelPrincipal
             // 
             statusLabelPrincipal.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            statusLabelPrincipal.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusLabelPrincipal.Items.AddRange(new ToolStripItem[] { statusPrincipal1 });
             statusLabelPrincipal.Location = new Point(0, 309);
             statusLabelPrincipal.Name = "statusLabelPrincipal";
             statusLabelPrincipal.Size = new Size(762, 25);
             statusLabelPrincipal.TabIndex = 1;
             statusLabelPrincipal.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // statusPrincipal1
             // 
-            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            toolStripStatusLabel1.Size = new Size(185, 20);
-            toolStripStatusLabel1.Text = "Visualizando 0 registro(s)...";
+            statusPrincipal1.Name = "statusPrincipal1";
+            statusPrincipal1.Size = new Size(185, 20);
+            statusPrincipal1.Text = "Visualizando 0 registro(s)...";
             // 
             // toolStrip1
             // 
@@ -191,7 +191,7 @@
         private ToolStripMenuItem contatosMenuItem;
         private ToolStripMenuItem compromissosMenuItem;
         private StatusStrip statusLabelPrincipal;
-        private ToolStripStatusLabel toolStripStatusLabel1;
+        private ToolStripStatusLabel statusPrincipal1;
         private ToolStrip toolStrip1;
         private ToolStripButton btnAdicionar;
         private ToolStripButton btnEditar;

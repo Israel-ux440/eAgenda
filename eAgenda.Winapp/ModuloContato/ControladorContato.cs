@@ -71,7 +71,6 @@ namespace eAgenda.Winapp.ModuloContato
             TelaPrincipalForm
                 .Instancia
                 .AtualizarRodape($"O registro \"{contatoEditado.Nome}\" foi editado com sucesso!");
-
         }
 
         public override void Excluir()
