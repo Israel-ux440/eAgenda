@@ -38,7 +38,12 @@ namespace eAgenda.Winapp
 
         private void compromissosMenuItem_Click(object sender, EventArgs e)
         {
-            
+            controlador = new ControladorCompromisso();
+
+            lblTipoCadastro.Text = "Cadastro de " + controlador.TipoCadastro;
+
+            ConfigurarToolTips(controlador);
+            ConfigurarListagem(controlador);
         }
 
         private void btnAdicionar_Click(object sender, EventArgs e)
@@ -72,9 +77,6 @@ namespace eAgenda.Winapp
 
         }
 
-       
-
-        
     }
 }
         
