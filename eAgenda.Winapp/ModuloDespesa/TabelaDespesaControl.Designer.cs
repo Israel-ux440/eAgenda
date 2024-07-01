@@ -1,6 +1,6 @@
-﻿namespace eAgenda.WinApp.ModuloContato
+﻿namespace eAgenda.WinApp.ModuloDespesa
 {
-    partial class ListagemContatoControl
+    partial class TabelaDespesaControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,33 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listContatos = new ListBox();
+            grid = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)grid).BeginInit();
             SuspendLayout();
             // 
-            // listContatos
+            // grid
             // 
-            listContatos.Dock = DockStyle.Fill;
-            listContatos.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            listContatos.FormattingEnabled = true;
-            listContatos.ItemHeight = 20;
-            listContatos.Location = new Point(0, 0);
-            listContatos.Name = "listContatos";
-            listContatos.Size = new Size(551, 323);
-            listContatos.TabIndex = 0;
+            grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grid.Dock = DockStyle.Fill;
+            grid.Location = new Point(0, 0);
+            grid.Name = "grid";
+            grid.Size = new Size(643, 396);
+            grid.TabIndex = 0;
             // 
-            // ListagemContatoControl
+            // TabelaDespesaControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(listContatos);
-            Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            Name = "ListagemContatoControl";
-            Size = new Size(551, 323);
+            Controls.Add(grid);
+            Name = "TabelaDespesaControl";
+            Size = new Size(643, 396);
+            ((System.ComponentModel.ISupportInitialize)grid).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private ListBox listContatos;
+        private DataGridView grid;
     }
 }
